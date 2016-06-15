@@ -1,0 +1,16 @@
+{
+  "Version": "0.0.1",
+  "Title": "Scroogify",
+  "Description": "Scroogify yourself and make money and shit and stuff",
+  "Publisher": "VeryBusinessCorp Inc.",
+  "RootNamespace":"",
+
+  "Packages": [
+    "Fuse",
+    "FuseJS",
+    "Fuse.BasicTheme"
+  ],
+  "Includes": [
+    "*"
+  ]
+}

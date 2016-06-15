@@ -1,0 +1,12 @@
+<App>
+    <Router ux:Name="router" />
+    <Navigator DefaultTemplate="login">
+        <LoginPage ux:Template="login" router="router" />
+        <RegisterPage ux:Template="register" router="router" />
+        <HomePage ux:Template="home" router="router" />
+        <SettingsPage ux:Template="settings" router="router" />
+        <UserProfilePage ux:Template="profile" router="router" />
+        <ActivitiesPage ux:Template="activities" router="router" />
+        <AddMoneyPage ux:Template="money" router="router" />
+    </Navigator>
+</App>

@@ -1,0 +1,7 @@
+<Page ux:Class="UserProfilePage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="UserProfilePage.js" />
+
+    <Text FontSize="40" Alignment="HorizontalCenter">User Profile Page</Text>
+
+</Page>

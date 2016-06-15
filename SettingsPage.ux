@@ -1,0 +1,7 @@
+<Page ux:Class="SettingsPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="SettingsPage.js" />
+
+    <Text FontSize="40" Alignment="HorizontalCenter">Settings Page</Text>
+
+</Page>

@@ -1,0 +1,7 @@
+<Page ux:Class="AddMoneyPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="AddMoneyPage.js" />
+
+    <Text FontSize="40" Alignment="HorizontalCenter">Add Money Page</Text>
+
+</Page>

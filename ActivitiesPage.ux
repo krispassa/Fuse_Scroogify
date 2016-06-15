@@ -1,0 +1,7 @@
+<Page ux:Class="ActivitiesPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="ActivitiesPage.js" />
+
+    <Text FontSize="40" Alignment="HorizontalCenter">Activities Page</Text>
+
+</Page>

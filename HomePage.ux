@@ -1,0 +1,39 @@
+<Page ux:Class="HomePage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="HomePage.js" />
+    <Rectangle Layer="Background" Fill="#E3F2FD" />
+
+    <!-- < Navbar -->
+
+
+    <DockPanel>
+        <StatusBarBackground Dock="Top" />
+        <DockPanel>
+            <Grid Columns="auto,1*,auto" Height="50" Dock="Top" Margin="5" Alignment="Top">
+                <Grid ColumnCount="2" RowCount="2" Width="22" Height="22" Margin="10">
+                    <Each Count="4">
+                        <Circle Color="Gray" Margin="1.5">
+                            <Stroke Width="1">
+                                <SolidColor Color="#333" />
+                            </Stroke>
+                        </Circle>
+                    </Each>
+                </Grid>
+                <Text ux:Name="titleText" Value="Home" FontSize="25" Alignment="Center" Margin="-50" />
+            </Grid>
+
+
+
+            <Text FontSize="40" Alignment="HorizontalCenter">Home Page</Text>
+
+
+            <StackPanel Orientation="Horizontal" ItemSpacing="-16" Dock="Bottom" Margin="10, 0, 0, 50" Alignment="HorizontalCenter">
+                <Basic.Button Text="Safe" />
+                <Basic.Button ColorScheme="Indigo" Text="Moderate" />
+                <Basic.Button Text="Aggressive" />
+            </StackPanel>
+
+        </DockPanel>
+       <BottomBarBackground Dock="Bottom" />
+    </DockPanel>
+</Page>
