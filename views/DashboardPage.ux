@@ -1,0 +1,7 @@
+<Page ux:Class="DashboardPage">
+    <Router ux:Dependency="router" />
+    <JavaScript File="DashboardPage.js" />
+
+    <Text FontSize="40" Alignment="HorizontalCenter">Dashboard Page</Text>
+
+</Page>

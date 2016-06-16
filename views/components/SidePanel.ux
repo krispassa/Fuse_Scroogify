@@ -1,0 +1,12 @@
+<Panel ux:Class="SidePanel">
+    <Router ux:Dependency="router" />
+    <!-- <JavaScript File="UserProfilePage.js" /> -->
+
+    <Text FontSize="40" Alignment="HorizontalCenter">SidePanelPage</Text>
+    <Grid RowCount="4">
+        <Panel><SolidColor Color="Red" /></Panel>
+        <Panel><SolidColor Color="Blue" /></Panel>
+        <Panel><SolidColor Color="Yellow" /></Panel>
+        <Panel><SolidColor Color="Green" /></Panel>
+    </Grid>
+</Panel>

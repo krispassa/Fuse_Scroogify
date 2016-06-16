@@ -8,5 +8,7 @@
         <UserProfilePage ux:Template="profile" router="router" />
         <ActivitiesPage ux:Template="activities" router="router" />
         <AddMoneyPage ux:Template="money" router="router" />
+        <GoalsPage ux:Template="goals" router="router" />
+        <DashboardPage ux:Template="dashboard" router="router" />
     </Navigator>
 </App>
