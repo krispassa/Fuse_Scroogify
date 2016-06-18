@@ -10,52 +10,7 @@
 
         <!-- Components -->
 
-        <Panel ux:Name="menuButton" Width="60" Height="60" Alignment="TopLeft" Offset="10,10" >
-            <Circle Layer="Background">
-                <SolidColor Color="#EE8485" />
-            </Circle>
-            <Panel Alignment="Center">
-                <Rectangle ux:Class="BurgerPart" Fill="White" CornerRadius="5" Height="5" Width="25" Margin="0,1.4"/>
-                <Grid RowCount="3">
-                    <BurgerPart ux:Name="rect1" />
-                    <BurgerPart ux:Name="rect2" />
-                    <BurgerPart ux:Name="rect3" />
-                </Grid>
-            </Panel>
-            <Clicked>
-                <Toggle Target="animateMenuButton" />
-                <Toggle Target="showMenu" />
-            </Clicked>
-        </Panel>
-
-        <!-- animation for the menu button -->
-        <WhileTrue ux:Name="animateMenuButton">
-            <Change rect2.Width="0" Duration="0.4" Easing="BounceOut" EasingBack="BounceIn" DelayBack="0.3"/>
-            <Move Target="rect1" Easing="QuadraticInOut" Y="1.5" RelativeTo="Size" Duration="0.1" Delay="0.2"/>
-            <Move Target="rect3" Easing="QuadraticInOut" Y="-1.5" RelativeTo="Size" Duration="0.1" Delay="0.2"/>
-            <Rotate Target="rect1" Easing="QuadraticInOut" Degrees="45" Duration="0.1" Delay="0.3" DelayBack="0"/>
-            <Rotate Target="rect3" Easing="QuadraticInOut" Degrees="-45" Duration="0.1" Delay="0.3" DelayBack="0"/>
-        </WhileTrue>
-
-        
-        <StackPanel ux:Name="sidebar" Offset="-130,0" Alignment="BottomLeft" Margin="0,0,0,50">
-            <DockPanel ux:Class="IconAndLabel" ux:Name="self" Margin="30">
-                <string ux:Property="Text" />
-                <Text TextColor="#fffa" FontSize="14" Alignment="HorizontalCenter" Margin="0,10,0,0" Dock="Bottom" Value="{Property self.Text}" />
-            </DockPanel>
-        </StackPanel>
-
-
-        <!-- animation for the side panel-->
-        <WhileTrue ux:Name="showMenu">
-            <Rotate Target="content" Degrees="-45"
-                    Duration="0.45"    Easing="ExponentialInOut"
-                    DurationBack="0.6" EasingBack="BounceIn" />
-
-            <Rotate Target="menuButton" Degrees="-90"
-                    Duration="0.45"    Easing="ExponentialInOut"
-                    DurationBack="0.6" EasingBack="BounceIn" />
-        </WhileTrue>
+        <MenuButton Alignment="TopLeft" Offset="10,10"/>
 
         <!-- Actual page starts here -->
         <Panel ux:Name="content" TransformOrigin="TopLeft">
@@ -66,10 +21,6 @@
                 <Panel><SolidColor Color="#C2768E" /></Panel>
             </Grid>
         </Panel>
-
-        <!-- Navbar -->
-
-
 
     </DockPanel>
 </Page>

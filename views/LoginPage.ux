@@ -5,7 +5,7 @@
     <Rectangle Layer="Background" Fill="#E3F2FD" />
     <DockPanel>
         <StatusBarBackground Dock="Top" />
-
+        
         <StackPanel Alignment="VerticalCenter" Margin="50, 20, 50, 0">
             <Text FontSize="40" Alignment="HorizontalCenter">Scroogify Me!</Text>
             <Text  Alignment="HorizontalCenter" Opacity="0.7" Margin="0,10,0,70">Make money n shit n stuff</Text>
