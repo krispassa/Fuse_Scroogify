@@ -22,4 +22,6 @@
         <Rotate Target="rect1" Easing="QuadraticInOut" Degrees="45" Duration="0.1" Delay="0.3" DelayBack="0"/>
         <Rotate Target="rect3" Easing="QuadraticInOut" Degrees="-45" Duration="0.1" Delay="0.3" DelayBack="0"/>
     </WhileTrue>
+
+
 </Panel>

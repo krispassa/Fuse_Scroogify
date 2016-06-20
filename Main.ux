@@ -1,14 +1,22 @@
 <App>
     <Router ux:Name="router" />
-    <Navigator DefaultTemplate="login">
-        <LoginPage ux:Template="login" router="router" />
-        <RegisterPage ux:Template="register" router="router" />
-        <HomePage ux:Template="home" router="router" />
-        <SettingsPage ux:Template="settings" router="router" />
-        <UserProfilePage ux:Template="profile" router="router" />
-        <ActivitiesPage ux:Template="activities" router="router" />
-        <AddMoneyPage ux:Template="money" router="router" />
-        <GoalsPage ux:Template="goals" router="router" />
-        <DashboardPage ux:Template="dashboard" router="router" />
-    </Navigator>
+
+    <!-- Navbar -->
+        <Rectangle Alignment="Top" Height="50" Fill="Blue" />
+        <MenuButton Layer="Overlay" Alignment="TopLeft" Offset="10,10"/>
+        
+        <SidePanel router="router"/>
+        <!-- Pages -->
+        <Navigator DefaultTemplate="login">
+            <LoginPage ux:Template="login" router="router" />
+            <RegisterPage ux:Template="register" router="router" />
+            <HomePage ux:Template="home" router="router" />
+            <SettingsPage ux:Template="settings" router="router" />
+            <UserProfilePage ux:Template="profile" router="router" />
+            <ActivitiesPage ux:Template="activities" router="router" />
+            <AddMoneyPage ux:Template="money" router="router" />
+            <GoalsPage ux:Template="goals" router="router" />
+            <DashboardPage ux:Template="dashboard" router="router" />
+        </Navigator>
+
 </App>

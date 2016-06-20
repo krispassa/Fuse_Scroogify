@@ -1,5 +1,5 @@
-<Panel ux:InnerClass="MenuButton" ux:Name="SidePanel">
-    <!-- <Router ux:Dependency="router" /> -->
+<Panel ux:Class="SidePanel" Offset="-100%,0%">
+    <Router ux:Dependency="router" />
     <!-- <JavaScript File="UserProfilePage.js" /> -->
 
     <Text FontSize="40" Alignment="HorizontalCenter">SidePanelPage</Text>
@@ -12,6 +12,6 @@
 
     <!-- animation for the side panel-->
     <WhileTrue ux:Class="showSidePanel">
-
+        <!-- <Move Target="SidePanel" X="0.5" RelativeTo="Size" /> -->
     </WhileTrue>
 </Panel>

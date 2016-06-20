@@ -9,9 +9,6 @@
         <BottomBarBackground Dock="Bottom" />
 
         <!-- Components -->
-
-        <MenuButton Alignment="TopLeft" Offset="10,10"/>
-
         <!-- Actual page starts here -->
         <Panel ux:Name="content" TransformOrigin="TopLeft">
             <Grid RowCount="4">
